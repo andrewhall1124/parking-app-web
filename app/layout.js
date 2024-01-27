@@ -5,28 +5,33 @@ import NavBar from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ModeToggle } from "@/components/theme/mode-toggle";
 import Link from "next/link";
+import logo from "@/assets/park-sense.png"
+import Image from "next/image";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
 export const metadata = {
-  title: "Title",
-  description: "Created by Andrew Hall",
+  title: "Parking App Web",
+  description: "Cooked with Propane",
 };
 
 const routes = [
   {
-    title: 'Test',
-    href: 'test',
+    title: 'Lots',
+    href: 'lots',
   },
 ]
 
 function Logo(){
   return(
     <Link href='/'>
-      <div className="font-bold">
-        Logo
+      <div className="text-2xl font-bold">
+        <Image
+          src={logo}
+          height={50}
+        />
       </div>
     </Link>
   )
@@ -35,11 +40,11 @@ function Logo(){
 
 function Header(){
   return(
-    <div className="sticky top-0 flex justify-between p-4 bg-background/50 backdrop-blur-md">
+    <div className="sticky top-0 flex gap-8 items-center p-4 shadow-sm">
       <Logo/>
       <div className="flex gap-3">
         <NavBar routes={routes}/>
-        <ModeToggle/>
+        {/* <ModeToggle/> */}
       </div>
     </div>
   )
@@ -56,7 +61,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >        

@@ -12,7 +12,7 @@ import Link from "next/link"
 function Item({route}){
   return(
     <NavigationMenuItem>
-      <Link href={route.href} legacyBehavior passHref>
+      <Link href={`/${route.href}`} legacyBehavior passHref>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
           {route.title}
         </NavigationMenuLink>
