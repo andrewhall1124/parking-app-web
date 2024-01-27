@@ -66,7 +66,7 @@ export default function Page(){
     <div className="flex flex-col items-center">
       <div className="w-[1400px]">
         <div className="text-3xl font-semibold py-4">
-          Jesse KnightBuilding Parking Lot
+          Jesse Knight Building Parking Lot
         </div>
         <div className="flex flex-col gap-4 items-start">
           <div className="flex gap-4">
@@ -90,7 +90,7 @@ export default function Page(){
           </div>
           <div className="flex gap-4">
             <Card className='p-8 shadow-xl'>
-              <div className='text-2xl font-semibold'>Today's Capacity (%)</div>
+              <div className='text-2xl font-semibold'>Todays Capacity (%)</div>
               <LineChart width={600} height={300} data={usage} margin={{ top: 10, right: 10, bottom: 10, left: 10}}>
                 <Line type="monotone" dataKey="usage"  strokeWidth={3}/>
               </LineChart>
