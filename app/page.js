@@ -1,5 +1,5 @@
 'use client'
-import { YAxis, XAxis, Line, LineChart } from 'recharts';
+import { Line, LineChart } from 'recharts';
 import { Card } from '@/components/ui/card';
 export default function Page(){
   

@@ -3,7 +3,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils"
 import NavBar from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import { ModeToggle } from "@/components/theme/mode-toggle";
 import Link from "next/link";
 import logo from "@/assets/park-sense.png"
 import Image from "next/image";
@@ -13,7 +12,7 @@ export const fontSans = FontSans({
   variable: "--font-sans",
 })
 export const metadata = {
-  title: "Parking App Web",
+  title: "Parking Sense Web",
   description: "Cooked with Propane",
 };
 
