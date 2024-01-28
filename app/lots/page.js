@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
+  DialogClose,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -99,7 +99,9 @@ export default function Page(){
                 </div>
               </div>
               <DialogFooter>
-                <Button type="submit">Submit</Button>
+                <DialogClose asChild>
+                  <Button type="submit">Submit</Button>
+                </DialogClose>
               </DialogFooter>
             </DialogContent>
           </Dialog>
